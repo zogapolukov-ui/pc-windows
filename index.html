@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Windows 95</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== BOOT SCREEN ===================== -->
+<div id="boot-screen">
+  <div class="boot-inner">
+    <div class="boot-logo">
+      <div class="boot-flag">
+        <span style="background:#ff4d4d"></span><span style="background:#4dff4d"></span>
+        <span style="background:#4d7bff"></span><span style="background:#ffdd4d"></span>
+      </div>
+      <div class="boot-title">Windows<span class="boot-95">42</span></div>
+      <div class="boot-sub">Версия 4.00.950</div>
+    </div>
+    <div class="boot-log" id="boot-log"></div>
+    <div class="boot-bar"><div class="boot-bar-fill" id="boot-bar-fill"></div></div>
+    <div class="boot-hint">нажмите любую клавишу для продолжения</div>
+  </div>
+</div>
+
+<!-- ===================== DESKTOP ===================== -->
+<div id="desktop">
+  <div id="wallpaper-canvas"></div>
+  <div id="crt-overlay"></div>
+
+  <div id="icon-layer"></div>
+  <div id="select-box"></div>
+</div>
+
+<!-- ===================== CONTEXT MENUS (built by JS) ===================== -->
+<div id="context-menu-root"></div>
+
+<!-- ===================== START MENU ===================== -->
+<div id="start-menu" class="hidden">
+  <div class="start-sidebar">
+    <span>Windows<b>42</b></span>
+  </div>
+  <div class="start-items" id="start-items"></div>
+</div>
+
+<!-- ===================== TASKBAR ===================== -->
+<div id="taskbar">
+  <button id="start-btn" class="taskbar-btn start-btn">
+    <span class="start-icon"></span>Пуск
+  </button>
+  <div id="taskbar-sep"></div>
+  <div id="taskbar-quicklaunch"></div>
+  <div id="taskbar-qlsep"></div>
+  <div id="taskbar-windows"></div>
+  <div id="tray">
+    <span id="tray-sound" class="tray-icon" title="Громкость"></span>
+    <span class="tray-icon" title="Питание"></span>
+    <span id="tray-clock"></span>
+  </div>
+</div>
+
+<!-- ===================== WINDOW LAYER ===================== -->
+<div id="window-layer"></div>
+
+<!-- ===================== DIALOG LAYER ===================== -->
+<div id="dialog-layer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
