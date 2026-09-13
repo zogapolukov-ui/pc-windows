@@ -135,7 +135,7 @@ const ASSETS = {
 
   /* Used by the "Анна & Я" site inside Chrome. */
   videos: {
-    annaFirstMeeting: 'assets/videos/anna-love/IMG_7012.MOV',
+    annaFirstMeeting: 'assets/videos/anna-love/IMG_7012.mp4',
     /* "Наш первый день вместе" memory tab. Filename kept exactly as given. */
     annaFirstDayTogether: 'assets/videos/anna-love/doc_2026-08-28_21-53-51.mp4',
     /* "Самый счастливый день" memory tab. Filename kept exactly as given. */
@@ -1833,7 +1833,7 @@ function renderGiftAnna(body, go){
         </div>
       </div>`;
     } else if(stage === 'video'){
-      html = `<h1>IMG_7012.MOV</h1>
+      html = `<h1>IMG_7012.mp4</h1>
         ${mediaBlock(videoSrc, true, 'Видео нашей первой встречи')}
         <div class="gift-anna-caption">Видео нашей первой встречи.</div>
         <div class="gift-anna-nav" id="gift-anna-video-nav"><button data-anna="back">Назад</button></div>`;
